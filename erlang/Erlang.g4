@@ -24,6 +24,10 @@
 
 grammar Erlang;
 
+@header {
+    package bhunt.erlang.parser;
+}
+
 forms : form+ EOF ;
 
 form : (attribute | function | ruleClauses) '.' ;
